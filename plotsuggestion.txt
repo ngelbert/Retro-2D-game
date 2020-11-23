@@ -1,0 +1,9 @@
+
+
+
+
+v to highlight, V to highlight line, y to copy, d to cut, p to paste
+i to insert, dd to delete, 3dd to delete 3 lines, esc to go to command mode
+U to undo, ctrl r to redo, /text to find "text", :%s/text/text2/(g)(c) to find text 
+and replace with text2, g for all of them, c for validation.
+:w to save, :q to quit file, :w "filename" to save as
