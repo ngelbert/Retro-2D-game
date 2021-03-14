@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 605601e112ea7b84995486a702ec719b
+guid: 7ac400efee09e8141b91e62429f77a0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6950587983034333101
-    second: Rack 32 bit_0
+      213: 4150969451963394075
+    second: front sprite sheet_0
+  - first:
+      213: 2116858855496346631
+    second: front sprite sheet_1
+  - first:
+      213: 114606325861487539
+    second: front sprite sheet_2
+  - first:
+      213: 2757166964136129329
+    second: front sprite sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -116,22 +125,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rack 32 bit_0
+      name: front sprite sheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 28
-        height: 28
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da73cdcd1f2757060800000000000000
-      internalID: 6950587983034333101
+      spriteID: b18a6c949b43b9930800000000000000
+      internalID: 4150969451963394075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cef79d9e7906d10800000000000000
+      internalID: 2116858855496346631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b39cfd98d9279100800000000000000
+      internalID: 114606325861487539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133b6cbeebc634620800000000000000
+      internalID: 2757166964136129329
       vertices: []
       indices: 
       edges: []
