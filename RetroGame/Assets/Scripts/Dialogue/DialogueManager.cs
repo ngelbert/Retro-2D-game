@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Sprite leftCharacter;
-    public Sprite rightCharacter;
+    public SpriteRenderer leftCharacter;
+    public SpriteRenderer rightCharacter;
     public Text nameText;
     public Text dialogueText;
 
@@ -17,16 +17,6 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         sentences = new Queue<Sentence>();
-    }
-
-    private void SetLeftSprite(Sprite sprite)
-    {
-        leftCharacter = sprite;
-    }
-
-    private void SetRightSprite(Sprite sprite)
-    {
-        rightCharacter = sprite;
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -58,7 +48,7 @@ public class DialogueManager : MonoBehaviour
             rightCharacterOptions.Add(s);
         }
 
-        // animate appearing dialogue box
+        // TODO: animate appearing dialogue box, potentially by setting x and y coordinates
         DisplayNextSentence();
     }
 
@@ -75,14 +65,14 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = sentence.text;
 
         int leftIndex = sentence.leftSpriteIndex < leftCharacterOptions.Count ? sentence.leftSpriteIndex : 0;
-        leftCharacter = leftCharacterOptions[leftIndex];
+        leftCharacter.sprite = leftCharacterOptions[leftIndex];
 
         int rightIndex = sentence.rightSpriteIndex < rightCharacterOptions.Count ? sentence.rightSpriteIndex : 0;
-        rightCharacter = rightCharacterOptions[rightIndex];
+        rightCharacter.sprite = rightCharacterOptions[rightIndex];
     }
 
     private void EndDialogue()
     {
-        // animate disappearing dialogue box
+        // TODO: animate disappearing dialogue box, invisible?
     }
 }
